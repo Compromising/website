@@ -1,0 +1,156 @@
+/*FONTS*/
+@font-face{
+    src: url(fonts/Roboto-Medium.ttf);
+    font-family: Roboto;
+}
+@font-face{
+    src: url(fonts/Nexa-Heavy.ttf);
+    font-family: Nexa;
+}
+/*HEADER SLIDEINTOP KEYFRAMES*/
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-1200px);
+    }
+    
+    to {
+        transform: translateX(0);
+    }
+}
+/*SETS BACKGROUND PLACEMENT*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*SETS OVERFLOW TO HIDDEN*/
+body{
+    overflow: hidden;
+}
+/*BACKGROUND COLOUR*/
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #292929;
+    background-image: url(images/city\ above.png);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+/*HEADER FORMATTING AND DROP SHADOW*/
+.container2{
+    background: #292929;
+    box-shadow: 3px 3px 5px;
+    text-shadow: 3px 3px 5px;
+    font-family: "Nexa", sans-serif;
+}
+/*HEADER SLIDEINTOP ANIMATION*/
+.container3{
+    animation: slideInTop 1s ease 0.25s 1 normal both;
+}
+/*HEADER POSITIONING*/
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+}
+/*LOGO FORMATTING*/
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #f3f5f8;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+/*HEADER HORIZONTAL LINKS*/
+.navitems{
+    display: flex;
+}
+/*HEADER LINK FORMATTING*/
+.navitems li{
+    list-style: none;
+    margin: 0 15px;
+}
+/*HEADER FORMATTING*/
+.navitems li a{
+    font-size: 25px;
+    color: #f3f5f8;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    transition: color 0.3s, text-shadow 0.3s;
+}
+/*HEADER HOVER COLOUR & GLOW*/
+.navitems li:hover a,
+.links a:hover{
+    color: #7f00ff;
+    text-shadow: 0 0 5px #7f00ff,
+                 0 0 10px #7f00ff,
+                 0 0 20px #7f00ff,
+                 0 0 40px #7f00ff,
+                 0 0 80px #7f00ff;
+}
+/*INSTA LINK FORMATTING*/
+.links a{
+    font-size: 30px;
+    color: #f3f5f8;
+    margin: 25px 10px;
+
+    transition: color 0.3s, text-shadow 0.3s;
+}
+/*HOME TEXT POSITIONING AND SLIDEINLEFT ANIMATION*/
+.wrapper{
+    margin-left: 5em;
+    margin-top: 5em;
+    color: #f3f5f8;
+
+    animation: slideInLeft 1s ease 0.25s 1 normal both;
+}
+/*HOME "HOME" TEXT FORMATTING*/
+.cols0{
+    font-family: "Nexa", sans-serif;
+    font-size: 1.25em;
+    text-shadow: 2px 2px 5px #f3f5f8;
+    letter-spacing: 1px;
+}
+/*HOME TEXT FORMATTING*/
+.cols1{
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4em;
+    color: #eeeeee;
+}
+/*HOME CONTACT TRANSITION AND HOVER COLOUR*/
+.contact{
+    color: #f3f5f8;
+    font-weight: bold;
+
+    transition: color 0.3s, text-shadow 0.3s;
+}
+.contact:hover{
+    color: #7f00ff;
+    text-shadow: 0 0 10px #7f00ff,
+                 0 0 20px #7f00ff,
+                 0 0 30px #7f00ff;
+    
+    transition: color 0.3s;
+}
+/*EMAIL FORMATTING*/
+.email{
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
